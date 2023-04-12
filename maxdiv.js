@@ -1,6 +1,7 @@
+let readlineSync = require('readline-sync')
 
-let a = prompt("Digite o valor de a: ");
-let b = prompt("Digite o valor de b: ");
+let a = readlineSync.question("Digite o valor de a: ");
+let b = readlineSync.question("Digite o valor de b: ");
 let resto;
 
 while(b != 0){
@@ -8,5 +9,5 @@ while(b != 0){
     a = b;
     b = resto;
 } 
-document.write(a);
+console.log(a);
 

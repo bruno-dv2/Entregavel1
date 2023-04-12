@@ -1,12 +1,13 @@
+let readlineSync = require('readline-sync')
 
-let n = prompt("Digite a quantidade de números: ");
+let n = readlineSync.question("Digite a quantidade de numeros: ");
 
 let num;
 let cont = 0;
 let i = 0;
 
 while(i < n){
-    num = prompt("Digite seu número: ");
+    num = readlineSync.question("Digite seu numero: ");
 
     if(num >= 0){
         cont += 1;
@@ -14,4 +15,4 @@ while(i < n){
     i += 1
 }
 
-document.write("A quantidade de números inteiros é: " + cont)
+console.log("A quantidade de números inteiros eh: " + cont)

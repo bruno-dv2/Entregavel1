@@ -1,5 +1,6 @@
+let readlineSync = require('readline-sync')
 
-let n = prompt("Digite n: ");
+let n = readlineSync.question("Digite n: ");
 let div = 0;
 
 for (let count = 1; count <= n; count++) {
@@ -7,7 +8,7 @@ for (let count = 1; count <= n; count++) {
     div++
 }
   if (div == 2) {
-    document.write(n + " é primo!");
+    console.log(n + " é primo!");
   } else {
-    document.write(n + " não é primo!");
+    console.log(n + " não é primo!");
 }

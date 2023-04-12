@@ -1,10 +1,12 @@
-let soma = prompt("Digite quantos número deseja somar: ")
+let readlineSync = require('readline-sync')
+
+let soma = readlineSync.question("Digite quantos numeros deseja somar: ")
 let num;
 let cont = 0;
 
 for (let i = 0; i < soma; i++) {
-num = Number(prompt("Entre com o numero: "));
+num = Number(readlineSync.question("Entre com o numero: "));
 cont += num;
 }
 
-document.write("A soma é: " + cont);
+console.log("A soma eh: " + cont);

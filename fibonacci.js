@@ -1,15 +1,16 @@
+let readlineSync = require('readline-sync')
 
-let termo = prompt("Informe o número de termos: ");
+let termo = readlineSync.question("Informe o numero de termos: ");
 
 let resp = 0;
 let penultimo = 0, ultimo = 1;
 let num;
 
-document.write(penultimo + ", " + ultimo);
+console.log(penultimo + ", " + ultimo);
 
 for (let i = 3; i <= termo; i++){
     num = penultimo + ultimo;
-    document.write(", " + num);
+    console.log(" , " + num);
     penultimo = ultimo;
     ultimo = num;
 }
